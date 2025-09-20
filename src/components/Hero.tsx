@@ -13,13 +13,8 @@ const Hero = () => {
     <section id="hero" className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 pt-20">
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Logo & Brand */}
+          {/* Brand */}
           <div className="mb-8">
-            <img 
-              src={barcaLogo} 
-              alt="Barca Systems Logo" 
-              className="h-24 w-auto mx-auto mb-6"
-            />
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-4">
               BARCA
               <span className="block text-electric">SYSTEMS</span>
