@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import barcaLogo from '@/assets/barca-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,13 +15,6 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div 
-            className="flex items-center space-x-3 cursor-pointer" 
-            onClick={() => scrollToSection('hero')}
-          >
-            <img src={barcaLogo} alt="Barca Systems Logo" className="h-10 w-auto" />
-          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -32,12 +24,7 @@ const Header = () => {
             >
               Services
             </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-electric transition-colors"
-            >
-              About
-            </button>
+
             <button
               onClick={() => scrollToSection('contact')}
               className="text-foreground hover:text-electric transition-colors"
@@ -50,7 +37,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>07506 324 978</span>
+              <span>+44 7506 324978</span>
             </div>
             <Button variant="default" onClick={() => scrollToSection('contact')}>
               Get Quote
@@ -90,7 +77,7 @@ const Header = () => {
               </button>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground pt-2">
                 <Phone className="h-4 w-4" />
-                <span>07506 324 978</span>
+                <span>+44 7506 324978</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />

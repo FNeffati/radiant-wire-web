@@ -1,7 +1,6 @@
 import { Phone, Mail, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import barcaLogo from '@/assets/barca-logo.png';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -56,10 +55,10 @@ const Hero = () => {
                 <div className="flex items-center justify-center md:justify-start space-x-3">
                   <Phone className="h-6 w-6 text-electric" />
                   <a 
-                    href="tel:07506324978" 
+                    href="tel:+44 7506 324978"
                     className="text-2xl font-bold text-foreground hover:text-electric transition-colors"
                   >
-                    07506 324 978
+                    +44 7506 324978
                   </a>
                 </div>
                 <div className="flex items-center justify-center md:justify-start space-x-3">
@@ -83,7 +82,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  onClick={() => window.open('tel:07506324978')}
+                  onClick={() => window.open('tel:+44 7506 324978')}
                   className="border-electric text-electric hover:bg-electric hover:text-electric-foreground"
                 >
                   Call Now

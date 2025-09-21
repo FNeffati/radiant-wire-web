@@ -11,7 +11,6 @@ const Footer = () => {
           {/* Logo & Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <img src={barcaLogo} alt="Barca Systems Logo" className="h-8 w-auto" />
               <div>
                 <h3 className="text-xl font-bold text-foreground">BARCA SYSTEMS</h3>
                 <p className="text-muted-foreground text-sm">Electrical Solutions for Home & Business</p>
@@ -53,10 +52,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-electric" />
                 <a 
-                  href="tel:07506324978" 
+                  href="tel:+44 7506 324978"
                   className="text-foreground hover:text-electric transition-colors"
                 >
-                  07506 324 978
+                  +44 7506 324978
                 </a>
               </div>
               <div className="flex items-center space-x-3">

@@ -56,10 +56,10 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <a 
-                  href="tel:07506324978" 
+                  href="tel:+44 7506 324978"
                   className="text-2xl font-bold text-electric hover:text-electric/80 transition-colors"
                 >
-                  07506 324 978
+                  +44 7506 324978
                 </a>
                 <p className="text-muted-foreground mt-2">
                   Available 24/7 for emergency electrical services
