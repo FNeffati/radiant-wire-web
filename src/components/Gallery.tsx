@@ -86,7 +86,7 @@ const Gallery = () => {
         </div>
 
         <Carousel opts={{ align: 'start', loop: true, dragFree: true }} className="w-full">
-          <CarouselContent className="-ml-6">
+          <CarouselContent className="-ml-6 cursor-grab active:cursor-grabbing">
             {projects.map((project) => (
               <CarouselItem key={project.title} className="pl-6 md:basis-1/2 lg:basis-1/3">
                 <Card
