@@ -6,13 +6,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-
-import workConsumerUnit from '@/assets/work-consumer-unit.jpg';
-import workRewiring from '@/assets/work-rewiring.jpg';
-import workLedOffice from '@/assets/work-led-office.jpg';
-import workEvCharger from '@/assets/work-ev-charger.jpg';
-import workGardenLighting from '@/assets/work-garden-lighting.jpg';
-import workTesting from '@/assets/work-testing.jpg';
+import work1 from '@/assets/work-1.jpg.asset.json';
+import work2 from '@/assets/work-2.jpg.asset.json';
+import work3 from '@/assets/work-3.jpg.asset.json';
+import work4 from '@/assets/work-4.jpg.asset.json';
+import work5 from '@/assets/work-5.jpg.asset.json';
+import work6 from '@/assets/work-6.jpg.asset.json';
+import work7 from '@/assets/work-7.jpg.asset.json';
 
 /**
  * Swap in your own photos here — just replace the `image` values
@@ -20,48 +20,56 @@ import workTesting from '@/assets/work-testing.jpg';
  */
 const projects = [
   {
-    image: workConsumerUnit,
-    alt: 'Electrician installing a new consumer unit with neatly routed cables in a domestic property',
-    category: 'Residential',
-    title: 'Consumer Unit Upgrade',
-    description: 'New 18th Edition board with RCBO protection, fully tested and certified.',
-  },
-  {
-    image: workRewiring,
-    alt: 'New electrical cabling run through timber stud walls during a full house rewire',
-    category: 'Rewiring',
-    title: 'Full House Rewire',
-    description: 'Three-bedroom home rewired throughout with minimal disruption.',
-  },
-  {
-    image: workLedOffice,
-    alt: 'Suspended office ceiling fitted with recessed LED panel lighting',
+    image: work6.url,
+    alt: 'Glazed office pods with linear LED lighting installed along a new corridor',
     category: 'Commercial',
-    title: 'Office LED Retrofit',
-    description: 'Replaced fluorescent fittings with LED panels, cutting energy use by 60%.',
+    title: 'Office Fit-Out Lighting',
+    description: 'Linear LED and emergency lighting installed throughout a new glazed office suite.',
   },
   {
-    image: workEvCharger,
-    alt: 'Wall-mounted EV charging point installed beside a driveway with an electric car',
-    category: 'Residential',
-    title: 'EV Charger Installation',
-    description: '7kW smart charge point installed with dedicated supply and surge protection.',
-  },
-  {
-    image: workGardenLighting,
-    alt: 'Illuminated garden and patio at dusk with spotlights and festoon lighting',
-    category: 'Lighting',
-    title: 'Garden & Patio Lighting',
-    description: 'Weatherproof outdoor lighting scheme with timer and app control.',
-  },
-  {
-    image: workTesting,
-    alt: 'Electrician testing an industrial distribution board with a multimeter',
+    image: work5.url,
+    alt: 'Walnut office tea point with under-cabinet LED strip lighting and pendant lights',
     category: 'Commercial',
-    title: 'EICR & Testing',
-    description: 'Full periodic inspection and report for a light industrial unit.',
+    title: 'Tea Point & Feature Lighting',
+    description: 'Pendant, under-cabinet and cove lighting wired and commissioned for a premium tea point.',
+  },
+  {
+    image: work4.url,
+    alt: 'Office corridor with recessed ceiling lights and glass partitions during fit-out',
+    category: 'Commercial',
+    title: 'Corridor Lighting & Power',
+    description: 'Ceiling grid lighting, detection and small power completed across a full floor.',
+  },
+  {
+    image: work3.url,
+    alt: 'Open-plan workspace lit with suspended black linear LED fittings',
+    category: 'Commercial',
+    title: 'Open-Plan Workspace',
+    description: 'Suspended linear LED scheme delivering even light levels across an open-plan floor.',
+  },
+  {
+    image: work2.url,
+    alt: 'Empty office floor with suspended linear lighting and exposed containment overhead',
+    category: 'Commercial',
+    title: 'Containment & Lighting Install',
+    description: 'Cable tray, containment and lighting installed ready for tenant handover.',
+  },
+  {
+    image: work7.url,
+    alt: 'Newly fitted washrooms with ceiling lights beside a walnut kitchen unit',
+    category: 'Commercial',
+    title: 'Washroom & Kitchen Power',
+    description: 'Lighting, extract and appliance circuits installed for new washrooms and kitchen.',
+  },
+  {
+    image: work1.url,
+    alt: 'Galvanised steel conduit with PIR sensor, isolator and junction boxes on a brick wall',
+    category: 'Industrial',
+    title: 'Steel Conduit Installation',
+    description: 'Neatly set-out galvanised conduit, PIR sensor and switched supply to plant.',
   },
 ];
+
 
 const Gallery = () => {
   return (
