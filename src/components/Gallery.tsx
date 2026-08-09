@@ -85,7 +85,7 @@ const Gallery = () => {
           </p>
         </div>
 
-        <Carousel opts={{ align: 'start', loop: true }} className="w-full">
+        <Carousel opts={{ align: 'start', loop: true, dragFree: true }} className="w-full">
           <CarouselContent className="-ml-6">
             {projects.map((project) => (
               <CarouselItem key={project.title} className="pl-6 md:basis-1/2 lg:basis-1/3">
