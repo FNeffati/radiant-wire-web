@@ -1,6 +1,7 @@
 import { Phone, Mail, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import heroCover from '@/assets/work-office-linear-lighting.jpg';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -9,8 +10,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 pt-20">
-      <div className="container mx-auto text-center">
+    <section id="hero" className="relative min-h-screen bg-gradient-hero flex items-center justify-center px-4 pt-20 overflow-hidden">
+      {/* Cover photo */}
+      <img
+        src={heroCover}
+        alt="Commercial office interior with linear LED lighting installed by Barca Systems"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background" />
+
+      <div className="container mx-auto text-center relative z-10">
+
         <div className="max-w-4xl mx-auto">
           {/* Brand */}
           <div className="mb-8">
