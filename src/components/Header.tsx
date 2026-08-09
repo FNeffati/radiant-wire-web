@@ -24,6 +24,13 @@ const Header = () => {
             >
               Services
             </button>
+            <button
+              onClick={() => scrollToSection('gallery')}
+              className="text-foreground hover:text-electric transition-colors"
+            >
+              View Our Work
+            </button>
+
 
             <button
               onClick={() => scrollToSection('contact')}
