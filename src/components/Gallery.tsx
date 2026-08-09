@@ -1,4 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+
 import workConsumerUnit from '@/assets/work-consumer-unit.jpg';
 import workRewiring from '@/assets/work-rewiring.jpg';
 import workLedOffice from '@/assets/work-led-office.jpg';
@@ -69,36 +77,42 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <Card
-              key={project.title}
-              className="group overflow-hidden rounded-lg bg-card border-border hover:border-electric/50 hover:shadow-electric transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.alt}
-                  loading="lazy"
-                  width={1024}
-                  height={768}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-electric/0 group-hover:bg-electric/20 transition-colors duration-300" />
-                <span className="absolute top-3 left-3 rounded-full bg-electric px-3 py-1 text-xs font-semibold text-electric-foreground">
-                  {project.category}
-                </span>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-                <p className="text-muted-foreground">{project.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <Carousel opts={{ align: 'start', loop: true }} className="w-full">
+          <CarouselContent className="-ml-6">
+            {projects.map((project) => (
+              <CarouselItem key={project.title} className="pl-6 md:basis-1/2 lg:basis-1/3">
+                <Card
+                  className="group h-full overflow-hidden rounded-lg bg-card border-border hover:border-electric/50 hover:shadow-electric transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.alt}
+                      loading="lazy"
+                      width={1024}
+                      height={768}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-electric/0 group-hover:bg-electric/20 transition-colors duration-300" />
+                    <span className="absolute top-3 left-3 rounded-full bg-electric px-3 py-1 text-xs font-semibold text-electric-foreground">
+                      {project.category}
+                    </span>
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
+                    <p className="text-muted-foreground">{project.description}</p>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-4 bg-card border-border hover:bg-electric hover:text-electric-foreground" />
+          <CarouselNext className="hidden md:flex -right-4 bg-card border-border hover:bg-electric hover:text-electric-foreground" />
+        </Carousel>
       </div>
     </section>
   );
 };
 
 export default Gallery;
+
