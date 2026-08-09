@@ -6,13 +6,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import work1 from '@/assets/work-1.jpg.asset.json';
-import work2 from '@/assets/work-2.jpg.asset.json';
-import work3 from '@/assets/work-3.jpg.asset.json';
-import work4 from '@/assets/work-4.jpg.asset.json';
-import work5 from '@/assets/work-5.jpg.asset.json';
-import work6 from '@/assets/work-6.jpg.asset.json';
-import work7 from '@/assets/work-7.jpg.asset.json';
+import workConduitInstall from '@/assets/work-conduit-install.jpg';
+import workOfficeLinearLighting from '@/assets/work-office-linear-lighting.jpg';
+import workOfficeFitout from '@/assets/work-office-fitout.jpg';
+import workCorridorLighting from '@/assets/work-corridor-lighting.jpg';
+import workTeaPointLighting from '@/assets/work-tea-point-lighting.jpg';
+import workMeetingPods from '@/assets/work-meeting-pods.jpg';
+import workWashroomKitchen from '@/assets/work-washroom-kitchen.jpg';
 
 /**
  * Swap in your own photos here — just replace the `image` values
@@ -20,53 +20,53 @@ import work7 from '@/assets/work-7.jpg.asset.json';
  */
 const projects = [
   {
-    image: work6.url,
-    alt: 'Glazed office pods with linear LED lighting installed along a new corridor',
+    image: workOfficeFitout,
+    alt: 'Open-plan office lounge lit with suspended black linear LED and pendant lighting',
     category: 'Commercial',
     title: 'Office Fit-Out Lighting',
-    description: 'Linear LED and emergency lighting installed throughout a new glazed office suite.',
+    description: 'Suspended linear LED and feature pendant lighting installed throughout an open-plan office.',
   },
   {
-    image: work5.url,
-    alt: 'Walnut office tea point with under-cabinet LED strip lighting and pendant lights',
+    image: workTeaPointLighting,
+    alt: 'Walnut office tea point with under-cabinet LED strip and feature lighting',
     category: 'Commercial',
     title: 'Tea Point & Feature Lighting',
-    description: 'Pendant, under-cabinet and cove lighting wired and commissioned for a premium tea point.',
+    description: 'Under-cabinet, cove and pendant lighting wired and commissioned for a premium tea point.',
   },
   {
-    image: work4.url,
-    alt: 'Office corridor with recessed ceiling lights and glass partitions during fit-out',
-    category: 'Commercial',
-    title: 'Corridor Lighting & Power',
-    description: 'Ceiling grid lighting, detection and small power completed across a full floor.',
-  },
-  {
-    image: work3.url,
-    alt: 'Open-plan workspace lit with suspended black linear LED fittings',
+    image: workOfficeLinearLighting,
+    alt: 'Empty open-plan office floor with suspended linear LED lighting and wood flooring',
     category: 'Commercial',
     title: 'Open-Plan Workspace',
-    description: 'Suspended linear LED scheme delivering even light levels across an open-plan floor.',
+    description: 'Suspended linear LED scheme delivering even light levels across a full office floor.',
   },
   {
-    image: work2.url,
-    alt: 'Empty office floor with suspended linear lighting and exposed containment overhead',
+    image: workCorridorLighting,
+    alt: 'Office corridor fit-out with recessed and linear ceiling lighting and glass partitions',
     category: 'Commercial',
-    title: 'Containment & Lighting Install',
-    description: 'Cable tray, containment and lighting installed ready for tenant handover.',
+    title: 'Corridor Lighting & Power',
+    description: 'Ceiling lighting, detection and small power installed along a new glazed corridor.',
   },
   {
-    image: work7.url,
-    alt: 'Newly fitted washrooms with ceiling lights beside a walnut kitchen unit',
+    image: workMeetingPods,
+    alt: 'Glazed meeting pods with linear LED lighting and monitor-arm power',
+    category: 'Commercial',
+    title: 'Meeting Pod Power & Lighting',
+    description: 'Lighting and desk power installed to glass meeting pods, ready for tenant fit-out.',
+  },
+  {
+    image: workWashroomKitchen,
+    alt: 'Newly fitted washrooms with bulkhead lighting beside a walnut kitchen with double ovens',
     category: 'Commercial',
     title: 'Washroom & Kitchen Power',
-    description: 'Lighting, extract and appliance circuits installed for new washrooms and kitchen.',
+    description: 'Lighting, extract and appliance circuits installed for new washrooms and a staff kitchen.',
   },
   {
-    image: work1.url,
-    alt: 'Galvanised steel conduit with PIR sensor, isolator and junction boxes on a brick wall',
+    image: workConduitInstall,
+    alt: 'Galvanised steel conduit with PIR sensor, isolator and switched spur on a brick wall',
     category: 'Industrial',
     title: 'Steel Conduit Installation',
-    description: 'Neatly set-out galvanised conduit, PIR sensor and switched supply to plant.',
+    description: 'Neatly set-out galvanised conduit, PIR sensor and switched supply to plant equipment.',
   },
 ];
 
