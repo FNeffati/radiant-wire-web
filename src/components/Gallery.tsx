@@ -1,4 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+
 import workConsumerUnit from '@/assets/work-consumer-unit.jpg';
 import workRewiring from '@/assets/work-rewiring.jpg';
 import workLedOffice from '@/assets/work-led-office.jpg';
